@@ -1,4 +1,5 @@
-import React, { Component, Link, Route } from 'react';
+import React, { Component} from 'react';
+import {Link} from 'react-router-dom';
 
 import {withRouter} from 'react-router-dom';
 
@@ -23,7 +24,8 @@ render(){
     <div>
         <button onClick={this.handleClick}>C L I C K   M E ! </button>
         <p>{this.state.count}</p>
-       <button className='goBackButton' onClick={e => this.props.history.push('/')}>Home</button>
+       
+       <Link to='/'>Home page</Link>
        
          
     </div>

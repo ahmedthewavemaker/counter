@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Route  exact path='/' component={Home} />
-      <Link to='/clicker' >Time to click count</Link>
+      
         
       <Route path ='/clicker' component={Counter}/> 
     </div>
